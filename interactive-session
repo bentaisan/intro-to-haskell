@@ -1,0 +1,30 @@
+GHCi, version 8.6.3: http://www.haskell.org/ghc/  :? for help
+Prelude> :l sperller.hs
+
+<no location info>: error: can't find file: sperller.hs
+Failed, no modules loaded.
+Prelude> :l speller.hs
+[1 of 1] Compiling Main             ( speller.hs, interpreted )
+
+speller.hs:19:25: error:
+    • Couldn't match expected type ‘Char’ with actual type ‘[a0] -> a0’
+    • Probable cause: ‘firstLetter’ is applied to too few arguments
+      In the first argument of ‘lookups’, namely ‘firstLetter’
+      In the first argument of ‘(++)’, namely ‘lookups firstLetter’
+      In the expression: lookups firstLetter ++ " is for " ++ lookups
+   |
+19 | speller input = lookups firstLetter ++ " is for " ++ lookups
+   |                         ^^^^^^^^^^^
+
+speller.hs:19:54: error:
+    • Couldn't match expected type ‘[Char]’
+                  with actual type ‘Char -> [Char]’
+    • Probable cause: ‘lookups’ is applied to too few arguments
+      In the second argument of ‘(++)’, namely ‘lookups’
+      In the second argument of ‘(++)’, namely ‘" is for " ++ lookups’
+      In the expression: lookups firstLetter ++ " is for " ++ lookups
+   |
+19 | speller input = lookups firstLetter ++ " is for " ++ lookups
+   |                                                      ^^^^^^^
+Failed, no modules loaded.
+Prelude> 
