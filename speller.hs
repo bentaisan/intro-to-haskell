@@ -16,7 +16,7 @@ lookups firstLetter = snd . head $ filter(\(x,y) -> x == firstLetter) dictionary
 
 -- assemble the ouput
 speller :: [[Char]] -> [Char]
-speller input = lookups input ++ " is for " ++ lookups
+speller input = lookups firstLetter ++ " is for " ++ lookups
 
 main::IO ()
 main = do
