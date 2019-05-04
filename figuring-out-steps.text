@@ -1,0 +1,51 @@
+Prelude> let input = "zebra"
+Prelude> input !! 0
+'z'
+Prelude> let firstletter = input !! 0
+Prelude> firstletter
+'z'
+Prelude> let lookups = snd. head $ filter(\(x,y) -> x == firstletter) dictionary
+
+<interactive>:12:62: error:
+    Variable not in scope: dictionary :: [(Char, c)]
+Prelude> dictionary = [('a',"abstract algebra"),('b',"boolean"),('c',"category theory"),('d',"diagram chasing"),('e',"exact sequence"),('f',"finitary operation"),('g',"group"),('h',"homomorphism"),('i',"invert"),('j',"Julia set"),('k',"K-nearest neighbor"),('l',"lemma"),('m',"multiplicative inverse"),('n',"normal subgroup"),('o',"object"),('p',"perfect number"),('r',"ring"),('s',"semigroup"),('t',"topos theory"),('u',"untouchable number"),('v',"variational calculus"),('w',"wreath product"),('x',"x-axis"),('y',"y-axis"),('z',"Zorn's lemma")]
+Prelude> let lookups = snd. head $ filter(\(x,y) -> x == firstletter) dictionary
+Prelude> looksups
+
+<interactive>:15:1: error:
+    • Variable not in scope: looksups
+    • Perhaps you meant one of these:
+        ‘lookups’ (line 14), ‘lookup’ (imported from Prelude)
+Prelude> lookups
+"Zorn's lemma"
+Prelude> let speller = firstletter ++ " is for " ++ lookups
+
+<interactive>:17:15: error:
+    • Couldn't match expected type ‘[Char]’ with actual type ‘Char’
+    • In the first argument of ‘(++)’, namely ‘firstletter’
+      In the expression: firstletter ++ " is for " ++ lookups
+      In an equation for ‘speller’:
+          speller = firstletter ++ " is for " ++ lookups
+Prelude> let speller = (\(firstletter) -> [firstletter]) ++ " is for " ++ lookups
+
+<interactive>:18:16: error:
+    • Couldn't match expected type ‘[Char]’
+                  with actual type ‘a0 -> [a0]’
+    • The lambda expression ‘\ (firstletter) -> ...’ has one argument,
+      but its type ‘[Char]’ has none
+      In the first argument of ‘(++)’, namely
+        ‘(\ (firstletter) -> [firstletter])’
+      In the expression:
+        (\ (firstletter) -> [firstletter]) ++ " is for " ++ lookups
+Prelude> set speller = [firstletter] ++ " is for " ++ lookups
+Prelude> speller
+
+<interactive>:20:1: error: Variable not in scope: speller
+Prelude> speller = [firstletter] ++ " is for " ++ lookups
+Prelude> sperller
+
+<interactive>:22:1: error:
+    • Variable not in scope: sperller
+    • Perhaps you meant ‘speller’ (line 21)
+Prelude> speller
+"z is for Zorn's lemma"
