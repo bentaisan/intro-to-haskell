@@ -27,4 +27,719 @@ speller.hs:19:54: error:
 19 | speller input = lookups firstLetter ++ " is for " ++ lookups
    |                                                      ^^^^^^^
 Failed, no modules loaded.
+Prelude> :l speller.hs
+[1 of 1] Compiling Main             ( speller.hs, interpreted )
+
+speller.hs:19:17: error:
+    • Couldn't match expected type ‘[Char]’
+                  with actual type ‘[a0] -> a0’
+    • Probable cause: ‘firstLetter’ is applied to too few arguments
+      In the first argument of ‘(++)’, namely ‘firstLetter’
+      In the expression:
+        firstLetter ++ " is for " ++ lookups (firstLetter input)
+      In an equation for ‘speller’:
+          speller input
+            = firstLetter ++ " is for " ++ lookups (firstLetter input)
+   |
+19 | speller input = firstLetter ++ " is for " ++ lookups (firstLetter input)
+   |                 ^^^^^^^^^^^
+
+speller.hs:19:55: error:
+    • Couldn't match expected type ‘Char’ with actual type ‘[Char]’
+    • In the first argument of ‘lookups’, namely ‘(firstLetter input)’
+      In the second argument of ‘(++)’, namely
+        ‘lookups (firstLetter input)’
+      In the second argument of ‘(++)’, namely
+        ‘" is for " ++ lookups (firstLetter input)’
+   |
+19 | speller input = firstLetter ++ " is for " ++ lookups (firstLetter input)
+   |                                                       ^^^^^^^^^^^^^^^^^
+Failed, no modules loaded.
+Prelude> :l speller.hs
+[1 of 1] Compiling Main             ( speller.hs, interpreted )
+
+speller.hs:19:17: error:
+    • Couldn't match expected type ‘[Char]’
+                  with actual type ‘[a0] -> a0’
+    • Probable cause: ‘firstLetter’ is applied to too few arguments
+      In the first argument of ‘(++)’, namely ‘firstLetter’
+      In the expression:
+        firstLetter ++ " is for " ++ lookups (firstLetter input)
+      In an equation for ‘speller’:
+          speller input
+            = firstLetter ++ " is for " ++ lookups (firstLetter input)
+   |
+19 | speller input = firstLetter ++ " is for " ++ lookups (firstLetter input)
+   |                 ^^^^^^^^^^^
+
+speller.hs:19:55: error:
+    • Couldn't match expected type ‘Char’ with actual type ‘[Char]’
+    • In the first argument of ‘lookups’, namely ‘(firstLetter input)’
+      In the second argument of ‘(++)’, namely
+        ‘lookups (firstLetter input)’
+      In the second argument of ‘(++)’, namely
+        ‘" is for " ++ lookups (firstLetter input)’
+   |
+19 | speller input = firstLetter ++ " is for " ++ lookups (firstLetter input)
+   |                                                       ^^^^^^^^^^^^^^^^^
+
+speller.hs:25:25: error:
+    • Couldn't match expected type ‘[Char]’
+                  with actual type ‘[a1] -> a1’
+    • Probable cause: ‘firstLetter’ is applied to too few arguments
+      In the expression: firstLetter
+      In the first argument of ‘speller’, namely ‘[firstLetter]’
+      In the first argument of ‘putStr’, namely ‘(speller [firstLetter])’
+   |
+25 |        putStr (speller [firstLetter])
+   |                         ^^^^^^^^^^^
+Failed, no modules loaded.
+Prelude> :l speller.hs
+[1 of 1] Compiling Main             ( speller.hs, interpreted )
+
+speller.hs:19:17: error:
+    • Couldn't match expected type ‘[Char]’
+                  with actual type ‘[a0] -> a0’
+    • Probable cause: ‘firstLetter’ is applied to too few arguments
+      In the first argument of ‘(++)’, namely ‘firstLetter’
+      In the expression:
+        firstLetter ++ " is for " ++ lookups (firstLetter input)
+      In an equation for ‘speller’:
+          speller input
+            = firstLetter ++ " is for " ++ lookups (firstLetter input)
+   |
+19 | speller input = firstLetter ++ " is for " ++ lookups (firstLetter input)
+   |                 ^^^^^^^^^^^
+
+speller.hs:19:55: error:
+    • Couldn't match expected type ‘Char’ with actual type ‘[Char]’
+    • In the first argument of ‘lookups’, namely ‘(firstLetter input)’
+      In the second argument of ‘(++)’, namely
+        ‘lookups (firstLetter input)’
+      In the second argument of ‘(++)’, namely
+        ‘" is for " ++ lookups (firstLetter input)’
+   |
+19 | speller input = firstLetter ++ " is for " ++ lookups (firstLetter input)
+   |                                                       ^^^^^^^^^^^^^^^^^
+Failed, no modules loaded.
+Prelude> :l speller.hs
+[1 of 1] Compiling Main             ( speller.hs, interpreted )
+
+speller.hs:19:17: error:
+    • Couldn't match expected type ‘[Char]’
+                  with actual type ‘[a0] -> a0’
+    • Probable cause: ‘firstLetter’ is applied to too few arguments
+      In the first argument of ‘(++)’, namely ‘firstLetter’
+      In the expression: firstLetter ++ " is for " ++ lookups
+      In an equation for ‘speller’:
+          speller input = firstLetter ++ " is for " ++ lookups
+   |
+19 | speller input = firstLetter ++ " is for " ++ lookups
+   |                 ^^^^^^^^^^^
+
+speller.hs:19:46: error:
+    • Couldn't match expected type ‘[Char]’
+                  with actual type ‘Char -> [Char]’
+    • Probable cause: ‘lookups’ is applied to too few arguments
+      In the second argument of ‘(++)’, namely ‘lookups’
+      In the second argument of ‘(++)’, namely ‘" is for " ++ lookups’
+      In the expression: firstLetter ++ " is for " ++ lookups
+   |
+19 | speller input = firstLetter ++ " is for " ++ lookups
+   |                                              ^^^^^^^
+Failed, no modules loaded.
+Prelude> :l speller.hs
+[1 of 1] Compiling Main             ( speller.hs, interpreted )
+
+speller.hs:20:17: error:
+    • Couldn't match expected type ‘[Char]’ with actual type ‘Char’
+    • In the first argument of ‘(++)’, namely ‘firstLetter’
+      In the expression: firstLetter ++ " is for " ++ lookups
+      In an equation for ‘speller’:
+          speller input = firstLetter ++ " is for " ++ lookups
+   |
+20 | speller input = firstLetter ++ " is for " ++ lookups
+   |                 ^^^^^^^^^^^
+
+speller.hs:20:46: error:
+    • Couldn't match expected type ‘[Char]’
+                  with actual type ‘Char -> [Char]’
+    • Probable cause: ‘lookups’ is applied to too few arguments
+      In the second argument of ‘(++)’, namely ‘lookups’
+      In the second argument of ‘(++)’, namely ‘" is for " ++ lookups’
+      In the expression: firstLetter ++ " is for " ++ lookups
+   |
+20 | speller input = firstLetter ++ " is for " ++ lookups
+   |                                              ^^^^^^^
+Failed, no modules loaded.
+Prelude> let input = "zebra"
+Prelude> input !! 0
+'z'
+Prelude> let firstletter = input !! 0
+Prelude> firstletter
+'z'
+Prelude> let lookups = snd. head $ filter(\(x,y) -> x == firstletter) dictionary
+
+<interactive>:12:62: error:
+    Variable not in scope: dictionary :: [(Char, c)]
+Prelude> dictionary = [('a',"abstract algebra"),('b',"boolean"),('c',"category theory"),('d',"diagram chasing"),('e',"exact sequence"),('f',"finitary operation"),('g',"group"),('h',"homomorphism"),('i',"invert"),('j',"Julia set"),('k',"K-nearest neighbor"),('l',"lemma"),('m',"multiplicative inverse"),('n',"normal subgroup"),('o',"object"),('p',"perfect number"),('r',"ring"),('s',"semigroup"),('t',"topos theory"),('u',"untouchable number"),('v',"variational calculus"),('w',"wreath product"),('x',"x-axis"),('y',"y-axis"),('z',"Zorn's lemma")]
+Prelude> let lookups = snd. head $ filter(\(x,y) -> x == firstletter) dictionary
+Prelude> looksups
+
+<interactive>:15:1: error:
+    • Variable not in scope: looksups
+    • Perhaps you meant one of these:
+        ‘lookups’ (line 14), ‘lookup’ (imported from Prelude)
+Prelude> lookups
+"Zorn's lemma"
+Prelude> let speller = firstletter ++ " is for " ++ lookups
+
+<interactive>:17:15: error:
+    • Couldn't match expected type ‘[Char]’ with actual type ‘Char’
+    • In the first argument of ‘(++)’, namely ‘firstletter’
+      In the expression: firstletter ++ " is for " ++ lookups
+      In an equation for ‘speller’:
+          speller = firstletter ++ " is for " ++ lookups
+Prelude> let speller = (\(firstletter) -> [firstletter]) ++ " is for " ++ lookups
+
+<interactive>:18:16: error:
+    • Couldn't match expected type ‘[Char]’
+                  with actual type ‘a0 -> [a0]’
+    • The lambda expression ‘\ (firstletter) -> ...’ has one argument,
+      but its type ‘[Char]’ has none
+      In the first argument of ‘(++)’, namely
+        ‘(\ (firstletter) -> [firstletter])’
+      In the expression:
+        (\ (firstletter) -> [firstletter]) ++ " is for " ++ lookups
+Prelude> set speller = [firstletter] ++ " is for " ++ lookups
+Prelude> speller
+
+<interactive>:20:1: error: Variable not in scope: speller
+Prelude> speller = [firstletter] ++ " is for " ++ lookups
+Prelude> sperller
+
+<interactive>:22:1: error:
+    • Variable not in scope: sperller
+    • Perhaps you meant ‘speller’ (line 21)
+Prelude> speller
+"z is for Zorn's lemma"
+Prelude> :l speller.hs
+[1 of 1] Compiling Main             ( speller.hs, interpreted )
+
+speller.hs:35:1: error:
+    parse error (possibly incorrect indentation or mismatched brackets)
+Failed, no modules loaded.
+Prelude> :l speller.hs
+[1 of 1] Compiling Main             ( speller.hs, interpreted )
+
+speller.hs:34:9: error: parse error on input ‘[’
+   |
+34 |         [firstLetter]:" is for " ++ output
+   |         ^
+Failed, no modules loaded.
+Prelude> :l speller.hs
+[1 of 1] Compiling Main             ( speller.hs, interpreted )
+
+speller.hs:34:9: error: parse error on input ‘[’
+   |
+34 |         [firstLetter]:" is for " ++ output
+   |         ^
+Failed, no modules loaded.
+Prelude
+Prelude> :l speller.hs
+[1 of 1] Compiling Main             ( speller.hs, interpreted )
+
+speller.hs:34:9: error: parse error on input ‘[’
+   |
+34 |         [firstLetter]:" is for " ++ output
+   |         ^
+Failed, no modules loaded.
+Prelude> :l speller.hs
+[1 of 1] Compiling Main             ( speller.hs, interpreted )
+
+speller.hs:30:17: error:
+    • Couldn't match expected type ‘(Char -> [Char])
+                                    -> [[[Char]]] -> [Char]’
+                  with actual type ‘[[Char]]’
+    • The function ‘input’ is applied to two arguments,
+      but its type ‘[[Char]]’ has none
+      In the expression: input output msg
+      In an equation for ‘speller’:
+          speller input
+            = input output msg
+            where
+                firstLetter = input !! 0
+                output fl = snd . head $ filter (\ (x, y) -> x == fl) dictionary
+                msg = [firstLetter] : " is for " ++ output
+   |
+30 | speller input = input output msg
+   |                 ^^^^^^^^^^^^^^^^
+
+speller.hs:34:36: error:
+    • Couldn't match type ‘Char’ with ‘[[Char]]’
+      Expected type: [[[Char]]]
+        Actual type: [Char]
+    • In the second argument of ‘(:)’, namely ‘" is for " ++ output’
+      In the expression: [firstLetter] : " is for " ++ output
+      In an equation for ‘msg’:
+          msg = [firstLetter] : " is for " ++ output
+   |
+34 |                msg = [firstLetter]:" is for " ++ output
+   |                                    ^^^^^^^^^^^^^^^^^^^^
+
+speller.hs:34:50: error:
+    • Couldn't match expected type ‘[Char]’
+                  with actual type ‘Char -> [Char]’
+    • Probable cause: ‘output’ is applied to too few arguments
+      In the second argument of ‘(++)’, namely ‘output’
+      In the second argument of ‘(:)’, namely ‘" is for " ++ output’
+      In the expression: [firstLetter] : " is for " ++ output
+   |
+34 |                msg = [firstLetter]:" is for " ++ output
+   |                                                  ^^^^^^
+Failed, no modules loaded.
+Prelude> :l speller.hs
+[1 of 1] Compiling Main             ( speller.hs, interpreted )
+
+speller.hs:30:17: error:
+    • Couldn't match type ‘[Char]’ with ‘Char’
+      Expected type: [Char]
+        Actual type: [[Char]]
+    • In the expression: input
+      In an equation for ‘speller’:
+          speller input
+            = input
+            where
+                firstLetter = input !! 0
+                output fl = snd . head $ filter (\ (x, y) -> x == fl) dictionary
+                msg = [firstLetter] : " is for " ++ output
+   |
+30 | speller input = input --output msg
+   |                 ^^^^^
+
+speller.hs:34:36: error:
+    • Couldn't match type ‘Char’ with ‘[[Char]]’
+      Expected type: [[[Char]]]
+        Actual type: [Char]
+    • In the second argument of ‘(:)’, namely ‘" is for " ++ output’
+      In the expression: [firstLetter] : " is for " ++ output
+      In an equation for ‘msg’:
+          msg = [firstLetter] : " is for " ++ output
+   |
+34 |                msg = [firstLetter]:" is for " ++ output
+   |                                    ^^^^^^^^^^^^^^^^^^^^
+
+speller.hs:34:50: error:
+    • Couldn't match expected type ‘[Char]’
+                  with actual type ‘Char -> [Char]’
+    • Probable cause: ‘output’ is applied to too few arguments
+      In the second argument of ‘(++)’, namely ‘output’
+      In the second argument of ‘(:)’, namely ‘" is for " ++ output’
+      In the expression: [firstLetter] : " is for " ++ output
+   |
+34 |                msg = [firstLetter]:" is for " ++ output
+   |                                                  ^^^^^^
+Failed, no modules loaded.
+Prelude> :l speller.hs
+[1 of 1] Compiling Main             ( speller.hs, interpreted )
+
+speller.hs:31:9: error: parse error on input ‘where’
+   |
+31 |         where
+   |         ^^^^^
+Failed, no modules loaded.
+Prelude> :l speller.hs
+[1 of 1] Compiling Main             ( speller.hs, interpreted )
+
+speller.hs:30:17: error:
+    • Couldn't match type ‘[Char]’ with ‘Char’
+      Expected type: [Char]
+        Actual type: [[Char]]
+    • In the expression: input
+      In an equation for ‘speller’:
+          speller input
+            = input
+            where
+                firstLetter = input !! 0
+                output fl = snd . head $ filter (\ (x, y) -> x == fl) dictionary
+                msg = [firstLetter] : " is for " ++ output
+   |
+30 | speller input = input
+   |                 ^^^^^
+
+speller.hs:34:37: error:
+    • Couldn't match type ‘Char’ with ‘[[Char]]’
+      Expected type: [[[Char]]]
+        Actual type: [Char]
+    • In the second argument of ‘(:)’, namely ‘" is for " ++ output’
+      In the expression: [firstLetter] : " is for " ++ output
+      In an equation for ‘msg’:
+          msg = [firstLetter] : " is for " ++ output
+   |
+34 |                 msg = [firstLetter]:" is for " ++ output
+   |                                     ^^^^^^^^^^^^^^^^^^^^
+
+speller.hs:34:51: error:
+    • Couldn't match expected type ‘[Char]’
+                  with actual type ‘Char -> [Char]’
+    • Probable cause: ‘output’ is applied to too few arguments
+      In the second argument of ‘(++)’, namely ‘output’
+      In the second argument of ‘(:)’, namely ‘" is for " ++ output’
+      In the expression: [firstLetter] : " is for " ++ output
+   |
+34 |                 msg = [firstLetter]:" is for " ++ output
+   |                                                   ^^^^^^
+Failed, no modules loaded.
+Prelude> :l speller.hs
+[1 of 1] Compiling Main             ( speller.hs, interpreted )
+
+speller.hs:30:17: error:
+    • Couldn't match type ‘[[Char]]’ with ‘Char’
+      Expected type: [Char]
+        Actual type: [[[Char]]]
+    • In the expression:
+        [input !! 0]
+          : " is for "
+              ++
+                (\ (input)
+                   -> snd . head $ filter (\ (x, y) -> x == [input !! 0]) dictionary)
+      In an equation for ‘speller’:
+          speller input
+            = [input !! 0]
+                : " is for "
+                    ++
+                      (\ (input)
+                         -> snd . head $ filter (\ (x, y) -> x == [input !! 0]) dictionary)
+   |
+30 | speller input = [input !! 0]:" is for " ++ (\(input) -> snd . head $ filter(\(x,y) -> x == [input !! 0]) dictionary)
+   |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+speller.hs:30:30: error:
+    • Couldn't match type ‘Char’ with ‘[[Char]]’
+      Expected type: [[[Char]]]
+        Actual type: [Char]
+    • In the second argument of ‘(:)’, namely
+        ‘" is for "
+           ++
+             (\ (input)
+                -> snd . head $ filter (\ (x, y) -> x == [input !! 0]) dictionary)’
+      In the expression:
+        [input !! 0]
+          : " is for "
+              ++
+                (\ (input)
+                   -> snd . head $ filter (\ (x, y) -> x == [input !! 0]) dictionary)
+      In an equation for ‘speller’:
+          speller input
+            = [input !! 0]
+                : " is for "
+                    ++
+                      (\ (input)
+                         -> snd . head $ filter (\ (x, y) -> x == [input !! 0]) dictionary)
+   |
+30 | speller input = [input !! 0]:" is for " ++ (\(input) -> snd . head $ filter(\(x,y) -> x == [input !! 0]) dictionary)
+   |                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+speller.hs:30:45: error:
+    • Couldn't match expected type ‘[Char]’
+                  with actual type ‘[a0] -> [Char]’
+    • The lambda expression ‘\ (input)
+                               -> snd . head $ filter (\ (x, y) -> ...) dictionary’
+      has one argument,
+      but its type ‘[Char]’ has none
+      In the second argument of ‘(++)’, namely
+        ‘(\ (input)
+            -> snd . head $ filter (\ (x, y) -> x == [input !! 0]) dictionary)’
+      In the second argument of ‘(:)’, namely
+        ‘" is for "
+           ++
+             (\ (input)
+                -> snd . head $ filter (\ (x, y) -> x == [input !! 0]) dictionary)’
+   |
+30 | speller input = [input !! 0]:" is for " ++ (\(input) -> snd . head $ filter(\(x,y) -> x == [input !! 0]) dictionary)
+   |                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+speller.hs:30:106: error:
+    • Couldn't match type ‘Char’ with ‘[a0]’
+      Expected type: [([a0], [Char])]
+        Actual type: [(Char, [Char])]
+    • In the second argument of ‘filter’, namely ‘dictionary’
+      In the second argument of ‘($)’, namely
+        ‘filter (\ (x, y) -> x == [input !! 0]) dictionary’
+      In the expression:
+        snd . head $ filter (\ (x, y) -> x == [input !! 0]) dictionary
+    • Relevant bindings include
+        input :: [a0] (bound at speller.hs:30:47)
+   |
+30 | speller input = [input !! 0]:" is for " ++ (\(input) -> snd . head $ filter(\(x,y) -> x == [input !! 0]) dictionary)
+   |                                                                                                          ^^^^^^^^^^
+Failed, no modules loaded.
+Prelude> :l speller.hs
+[1 of 1] Compiling Main             ( speller.hs, interpreted )
+
+speller.hs:30:17: error:
+    • Couldn't match type ‘[Char]’ with ‘Char’
+      Expected type: [Char]
+        Actual type: [[Char]]
+    • In the expression:
+        input !! 0
+          : " is for "
+              ++
+                (\ (input)
+                   -> snd . head $ filter (\ (x, y) -> x == [input !! 0]) dictionary)
+      In an equation for ‘speller’:
+          speller input
+            = input !! 0
+                : " is for "
+                    ++
+                      (\ (input)
+                         -> snd . head $ filter (\ (x, y) -> x == [input !! 0]) dictionary)
+   |
+30 | speller input = input !! 0:" is for " ++ (\(input) -> snd . head $ filter(\(x,y) -> x == [input !! 0]) dictionary)
+   |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+speller.hs:30:28: error:
+    • Couldn't match type ‘Char’ with ‘[Char]’
+      Expected type: [[Char]]
+        Actual type: [Char]
+    • In the second argument of ‘(:)’, namely
+        ‘" is for "
+           ++
+             (\ (input)
+                -> snd . head $ filter (\ (x, y) -> x == [input !! 0]) dictionary)’
+      In the expression:
+        input !! 0
+          : " is for "
+              ++
+                (\ (input)
+                   -> snd . head $ filter (\ (x, y) -> x == [input !! 0]) dictionary)
+      In an equation for ‘speller’:
+          speller input
+            = input !! 0
+                : " is for "
+                    ++
+                      (\ (input)
+                         -> snd . head $ filter (\ (x, y) -> x == [input !! 0]) dictionary)
+   |
+30 | speller input = input !! 0:" is for " ++ (\(input) -> snd . head $ filter(\(x,y) -> x == [input !! 0]) dictionary)
+   |                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+speller.hs:30:43: error:
+    • Couldn't match expected type ‘[Char]’
+                  with actual type ‘[a0] -> [Char]’
+    • The lambda expression ‘\ (input)
+                               -> snd . head $ filter (\ (x, y) -> ...) dictionary’
+      has one argument,
+      but its type ‘[Char]’ has none
+      In the second argument of ‘(++)’, namely
+        ‘(\ (input)
+            -> snd . head $ filter (\ (x, y) -> x == [input !! 0]) dictionary)’
+      In the second argument of ‘(:)’, namely
+        ‘" is for "
+           ++
+             (\ (input)
+                -> snd . head $ filter (\ (x, y) -> x == [input !! 0]) dictionary)’
+   |
+30 | speller input = input !! 0:" is for " ++ (\(input) -> snd . head $ filter(\(x,y) -> x == [input !! 0]) dictionary)
+   |                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+speller.hs:30:104: error:
+    • Couldn't match type ‘Char’ with ‘[a0]’
+      Expected type: [([a0], [Char])]
+        Actual type: [(Char, [Char])]
+    • In the second argument of ‘filter’, namely ‘dictionary’
+      In the second argument of ‘($)’, namely
+        ‘filter (\ (x, y) -> x == [input !! 0]) dictionary’
+      In the expression:
+        snd . head $ filter (\ (x, y) -> x == [input !! 0]) dictionary
+    • Relevant bindings include
+        input :: [a0] (bound at speller.hs:30:45)
+   |
+30 | speller input = input !! 0:" is for " ++ (\(input) -> snd . head $ filter(\(x,y) -> x == [input !! 0]) dictionary)
+   |                                                                                                        ^^^^^^^^^^
+Failed, no modules loaded.
+Prelude> :l speller.hs
+[1 of 1] Compiling Main             ( speller.hs, interpreted )
+
+speller.hs:30:11: error:
+    • Couldn't match expected type ‘[[Char]] -> [Char]’
+                  with actual type ‘[Char]’
+    • Possible cause: ‘(:)’ is applied to too many arguments
+      In the expression:
+        input !! 0
+          : " is for "
+              ++
+                (\ (input)
+                   -> snd . head $ filter (\ (x, y) -> x == [input !! 0]) dictionary)
+      In an equation for ‘speller’:
+          speller
+            = input !! 0
+                : " is for "
+                    ++
+                      (\ (input)
+                         -> snd . head $ filter (\ (x, y) -> x == [input !! 0]) dictionary)
+   |
+30 | speller = input !! 0:" is for " ++ (\(input) -> snd . head $ filter(\(x,y) -> x == [input !! 0]) dictionary)
+   |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+speller.hs:30:37: error:
+    • Couldn't match expected type ‘[Char]’
+                  with actual type ‘[a0] -> [Char]’
+    • The lambda expression ‘\ (input)
+                               -> snd . head $ filter (\ (x, y) -> ...) dictionary’
+      has one argument,
+      but its type ‘[Char]’ has none
+      In the second argument of ‘(++)’, namely
+        ‘(\ (input)
+            -> snd . head $ filter (\ (x, y) -> x == [input !! 0]) dictionary)’
+      In the second argument of ‘(:)’, namely
+        ‘" is for "
+           ++
+             (\ (input)
+                -> snd . head $ filter (\ (x, y) -> x == [input !! 0]) dictionary)’
+   |
+30 | speller = input !! 0:" is for " ++ (\(input) -> snd . head $ filter(\(x,y) -> x == [input !! 0]) dictionary)
+   |                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+speller.hs:30:98: error:
+    • Couldn't match type ‘Char’ with ‘[a0]’
+      Expected type: [([a0], [Char])]
+        Actual type: [(Char, [Char])]
+    • In the second argument of ‘filter’, namely ‘dictionary’
+      In the second argument of ‘($)’, namely
+        ‘filter (\ (x, y) -> x == [input !! 0]) dictionary’
+      In the expression:
+        snd . head $ filter (\ (x, y) -> x == [input !! 0]) dictionary
+    • Relevant bindings include
+        input :: [a0] (bound at speller.hs:30:39)
+   |
+30 | speller = input !! 0:" is for " ++ (\(input) -> snd . head $ filter(\(x,y) -> x == [input !! 0]) dictionary)
+   |                                                                                                  ^^^^^^^^^^
+Failed, no modules loaded.
+Prelude> :l speller.hs
+[1 of 1] Compiling Main             ( speller.hs, interpreted )
+
+speller.hs:33:36: error:
+    parse error on input ‘=’
+    Perhaps you need a 'let' in a 'do' block?
+    e.g. 'let x = 5' instead of 'x = 5'
+   |
+33 |                          output fl = snd . head $ filter(\(x,y) -> x == fl) dictionary
+   |                                    ^
+Failed, no modules loaded
+Prelude> :l speller.hs
+[1 of 1] Compiling Main             ( speller.hs, interpreted )
+
+speller.hs:30:17: error:
+    • Couldn't match type ‘[Char]’ with ‘Char’
+      Expected type: [Char]
+        Actual type: [[Char]]
+    • In the expression: input
+      In an equation for ‘speller’:
+          speller input
+            = input
+            where
+                firstLetter = input !! 0
+                output fl = snd . head $ filter (\ (x, y) -> x == fl) dictionary
+                msg = [firstLetter] : " is for " ++ output (firstLetter)
+   |
+30 | speller input = input
+   |                 ^^^^^
+
+speller.hs:34:45: error:
+    • Couldn't match type ‘Char’ with ‘[[Char]]’
+      Expected type: [[[Char]]]
+        Actual type: [Char]
+    • In the second argument of ‘(:)’, namely
+        ‘" is for " ++ output (firstLetter)’
+      In the expression:
+        [firstLetter] : " is for " ++ output (firstLetter)
+      In an equation for ‘msg’:
+          msg = [firstLetter] : " is for " ++ output (firstLetter)
+   |
+34 |                         msg = [firstLetter]:" is for " ++ output(firstLetter)
+   |                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+speller.hs:34:66: error:
+    • Couldn't match expected type ‘Char’ with actual type ‘[Char]’
+    • In the first argument of ‘output’, namely ‘(firstLetter)’
+      In the second argument of ‘(++)’, namely ‘output (firstLetter)’
+      In the second argument of ‘(:)’, namely
+        ‘" is for " ++ output (firstLetter)’
+   |
+34 |                         msg = [firstLetter]:" is for " ++ output(firstLetter)
+   |                                                                  ^^^^^^^^^^^
+Failed, no modules loaded.
+Prelude> :l speller.hs
+[1 of 1] Compiling Main             ( speller.hs, interpreted )
+
+speller.hs:31:26: error:
+    parse error on input ‘=’
+    Perhaps you need a 'let' in a 'do' block?
+    e.g. 'let x = 5' instead of 'x = 5'
+   |
+31 |              firstLetter = input !! 0
+   |                          ^
+Failed, no modules loaded.
+Prelude> :l speller.hs
+[1 of 1] Compiling Main             ( speller.hs, interpreted )
+
+speller.hs:32:14: error: parse error on input ‘let’
+   |
+32 |              let output fl = snd . head $ filter(\(x,y) -> x == fl) dictionary
+   |              ^^^
+Failed, no modules loaded.
+Prelude> :l speller.hs
+[1 of 1] Compiling Main             ( speller.hs, interpreted )
+
+speller.hs:32:14: error: parse error on input ‘let’
+   |
+32 |              let output fl = snd . head $ filter(\(x,y) -> x == fl) dictionary
+   |              ^^^
+Failed, no modules loaded.
+Prelude> :l speller.hs
+[1 of 1] Compiling Main             ( speller.hs, interpreted )
+
+speller.hs:32:14: error: parse error on input ‘output’
+   |
+32 |              output fl = snd . head $ filter(\(x,y) -> x == fl) dictionary
+   |              ^^^^^^
+Failed, no modules loaded.
+Prelude> :l speller.hs
+[1 of 1] Compiling Main             ( speller.hs, interpreted )
+
+speller.hs:34:1: error:
+    parse error (possibly incorrect indentation or mismatched brackets)
+Failed, no modules loaded.
+Prelude> :l speller.hs
+[1 of 1] Compiling Main             ( speller.hs, interpreted )
+
+speller.hs:36:1: error:
+    parse error (possibly incorrect indentation or mismatched brackets)
+   |
+36 | foo :: Double -> Double
+   | ^
+Failed, no modules loaded.
+Prelude> :l speller.hs
+[1 of 1] Compiling Main             ( speller.hs, interpreted )
+
+speller.hs:36:1: error:
+    parse error (possibly incorrect indentation or mismatched brackets)
+   |
+36 | foo :: Double -> Double
+   | ^
+Failed, no modules loaded.
+Prelude> :l speller.hs
+[1 of 1] Compiling Main             ( speller.hs, interpreted )
+
+speller.hs:36:1: error:
+    parse error (possibly incorrect indentation or mismatched brackets)
+Failed, no modules loaded.
+Prelud
+Prelude> :l speller.hs
+[1 of 1] Compiling Main             ( speller.hs, interpreted )
+
+speller.hs:34:1: error:
+    parse error (possibly incorrect indentation or mismatched brackets)
+Failed, no modules loaded.
 Prelude> 
